@@ -225,6 +225,15 @@ $white-bg: #f9f9f9
             font-weight: 500
             line-height: 36.48px
 
+            &:hover
+                background-color: $white-bg
+                color: $red
+                transform: scale(1.1)
+
+            &:active
+                background-color: $text
+                color: $white
+
 .main
     margin: 0 auto
     padding: 0.5px
@@ -321,12 +330,277 @@ $white-bg: #f9f9f9
         content: ''
         margin: 85px auto 0 auto
         display: block
-        width: 80%
+        width: 100%
         height: 1px
         background-color: $black
 
     &-wrp
+        margin: 60px auto 0 auto
+        display: flex
+        justify-content: space-between
+        
         &-l
+            max-width: 40%
+
+            &-item
+                margin: 95px 0
+                padding: 0 0 20px 20px
+                background-color: $dark
+                border-radius: 20px
+                position: relative
+
+                &::after
+                    content: ''
+                    position: absolute
+                    right: -39px
+                    top: 95px
+                    border: 20px solid transparent
+                    border-bottom: 20px solid $dark
+                    border-left: 20px solid $dark
+
+                &:first-of-type
+                    margin: 95px 0 0 0
+
+                &:last-of-type
+                    margin: 190px 0 0 0
+
+            &-position
+                margin: 0
+                padding: 0
+                color: $white
+                font-family: Raleway
+                font-size: 22px
+                font-weight: 500
+                line-height: 62.78px
+
+                &-twitter
+                    opacity: 0.8
+                    color: $white
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                    line-height: 62.78px
+                    text-decoration: none
+
+                    &:hover
+                        color: $red
+
+                    &:active
+                        color: $text
+
+            &-period
+                display: block
+                color: $red
+                font-family: Raleway
+                font-size: 18px
+                font-weight: 400
+                text-transform: uppercase
+
+            &-desc
+                margin: 0
+                padding: 0
+                color: $white
+                font-family: Raleway
+                font-size: 16px
+                font-weight: 400
+                line-height: 27.62px
+
         &-center
+            &-line
+                margin: 0 auto
+                height: 100%
+                min-height: 250px
+                width: 0
+                border: 3px solid $dark
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+
+            &-circle
+                display: block
+                width: 20px
+                height: 20px
+                border: 3px solid $dark
+                border-radius: 50%
+                background-color: $red
+                position: relative
+
+                &::after
+                    content: ''
+                    display: block
+                    width: 40px
+                    height: 40px
+                    border: 3px solid $dark
+                    border-radius: 50%
+                    position: absolute
+                    left: -13px
+                    top: -13px
+                
+                &:hover
+                    transform: scale(1.5)
+
+                &:nth-of-type(2)
+                    margin: 80px 0 0 0;
+
+                &:nth-of-type(3)
+                    margin: 0 0 85px 0;
+
         &-r
+            max-width: 40%
+
+            &-item
+                margin: 95px 0
+                padding: 0 0 20px 20px
+                background-color: $dark
+                border-radius: 20px
+                position: relative
+
+                &::after
+                    content: ''
+                    position: absolute
+                    left: -39px
+                    top: 20px
+                    border: 20px solid transparent
+                    border-top: 20px solid $dark
+                    border-right: 20px solid $dark
+                
+                &:first-of-type
+                    margin: 0
+
+                &:last-of-type
+                    margin: 190px 0 0 0
+                                   
+
+            &-position
+                margin: 0
+                padding: 0
+                color: $white
+                font-family: Raleway
+                font-size: 22px
+                font-weight: 500
+                line-height: 62.78px
+
+                &-twitter
+                    opacity: 0.8
+                    color: $white
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                    line-height: 62.78px
+                    text-decoration: none
+
+                    &:hover
+                        color: $red
+
+                    &:active
+                        color: $text
+
+            &-period
+                display: block
+                color: $red
+                font-family: Raleway
+                font-size: 18px
+                font-weight: 400
+                text-transform: uppercase
+
+            &-desc
+                margin: 0
+                padding: 0
+                color: $white
+                font-family: Raleway
+                font-size: 16px
+                font-weight: 400
+                line-height: 27.62px
+
+.education
+    margin: 0 auto
+    padding: 85px
+    background-color: $white
+    
+.skills
+    margin: 0 auto
+    padding: 70px 85px
+    width: 100%
+    background-color: $black
+
+    &-content
+        margin: 45px 0 0 0
+        display: flex
+        justify-content: space-between
+
+    &-wrp
+        width: 30%
+
+    &-title
+        color: $white
+
+    &-subtitle
+        color: $white
+        font-family: Raleway
+        font-size: 18px
+        line-height: 31px
+        font-weight: 500
+        text-transform: capitalize
+
+    &-progress
+        margin: 20px 0 30px 0
+        height: 6px
+        width: 90%
+        background-color: $white
+        position: relative
+
+        &::after
+            content: ''
+            color: $white
+            font-family: Raleway
+            font-size: 14px
+            font-weight: 500
+            position: absolute;
+            top: -6px;
+            right: -40px;
+        
+        &-1::after
+           content: '90%' 
+
+        &-2::after
+           content: '98%'
+
+        &-3::after
+           content: '70%'
+
+        &-4::after
+           content: '90%' 
+
+        &-5::after
+           content: '80%'
+
+        &-6::after
+            content: '96%'
+            
+        &-7::after
+           content: '90%'
+
+        &-8::after
+           content: '80%'
+
+        &-9::after
+           content: '96%'
+
+        &-percent
+            display: block
+            height: 100%
+            background-color: $red
+            position: relative
+
+            &::after
+               content: ''
+               display: block
+               width: 18px
+               height: 18px
+               border-radius: 50%
+               background-color: $red
+               position: absolute
+               top: -6px
+               right: -1px 
             

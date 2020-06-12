@@ -253,6 +253,18 @@
   line-height: 36.48px;
 }
 
+.header-content-btn:hover {
+  background-color: #f9f9f9;
+  color: #fb6470;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-content-btn:active {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
 .main {
   margin: 0 auto;
   padding: 0.5px;
@@ -367,8 +379,342 @@
   content: '';
   margin: 85px auto 0 auto;
   display: block;
-  width: 80%;
+  width: 100%;
   height: 1px;
   background-color: #000000;
+}
+
+.work-wrp {
+  margin: 60px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-wrp-l {
+  max-width: 40%;
+}
+
+.work-wrp-l-item {
+  margin: 95px 0;
+  padding: 0 0 20px 20px;
+  background-color: #353541;
+  border-radius: 20px;
+  position: relative;
+}
+
+.work-wrp-l-item::after {
+  content: '';
+  position: absolute;
+  right: -39px;
+  top: 95px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #353541;
+  border-left: 20px solid #353541;
+}
+
+.work-wrp-l-item:first-of-type {
+  margin: 95px 0 0 0;
+}
+
+.work-wrp-l-item:last-of-type {
+  margin: 190px 0 0 0;
+}
+
+.work-wrp-l-position {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 62.78px;
+}
+
+.work-wrp-l-position-twitter {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 62.78px;
+  text-decoration: none;
+}
+
+.work-wrp-l-position-twitter:hover {
+  color: #fb6470;
+}
+
+.work-wrp-l-position-twitter:active {
+  color: #3e3e3e;
+}
+
+.work-wrp-l-period {
+  display: block;
+  color: #fb6470;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.work-wrp-l-desc {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.62px;
+}
+
+.work-wrp-center-line {
+  margin: 0 auto;
+  height: 100%;
+  min-height: 250px;
+  width: 0;
+  border: 3px solid #353541;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-wrp-center-circle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #353541;
+  border-radius: 50%;
+  background-color: #fb6470;
+  position: relative;
+}
+
+.work-wrp-center-circle::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #353541;
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  top: -13px;
+}
+
+.work-wrp-center-circle:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.work-wrp-center-circle:nth-of-type(2) {
+  margin: 80px 0 0 0;
+}
+
+.work-wrp-center-circle:nth-of-type(3) {
+  margin: 0 0 85px 0;
+}
+
+.work-wrp-r {
+  max-width: 40%;
+}
+
+.work-wrp-r-item {
+  margin: 95px 0;
+  padding: 0 0 20px 20px;
+  background-color: #353541;
+  border-radius: 20px;
+  position: relative;
+}
+
+.work-wrp-r-item::after {
+  content: '';
+  position: absolute;
+  left: -39px;
+  top: 20px;
+  border: 20px solid transparent;
+  border-top: 20px solid #353541;
+  border-right: 20px solid #353541;
+}
+
+.work-wrp-r-item:first-of-type {
+  margin: 0;
+}
+
+.work-wrp-r-item:last-of-type {
+  margin: 190px 0 0 0;
+}
+
+.work-wrp-r-position {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 62.78px;
+}
+
+.work-wrp-r-position-twitter {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 62.78px;
+  text-decoration: none;
+}
+
+.work-wrp-r-position-twitter:hover {
+  color: #fb6470;
+}
+
+.work-wrp-r-position-twitter:active {
+  color: #3e3e3e;
+}
+
+.work-wrp-r-period {
+  display: block;
+  color: #fb6470;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.work-wrp-r-desc {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.62px;
+}
+
+.education {
+  margin: 0 auto;
+  padding: 85px;
+  background-color: #ffffff;
+}
+
+.skills {
+  margin: 0 auto;
+  padding: 70px 85px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.skills-content {
+  margin: 45px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills-wrp {
+  width: 30%;
+}
+
+.skills-title {
+  color: #ffffff;
+}
+
+.skills-subtitle {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.skills-progress {
+  margin: 20px 0 30px 0;
+  height: 6px;
+  width: 90%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.skills-progress::after {
+  content: '';
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: -6px;
+  right: -40px;
+}
+
+.skills-progress-1::after {
+  content: '90%';
+}
+
+.skills-progress-2::after {
+  content: '98%';
+}
+
+.skills-progress-3::after {
+  content: '70%';
+}
+
+.skills-progress-4::after {
+  content: '90%';
+}
+
+.skills-progress-5::after {
+  content: '80%';
+}
+
+.skills-progress-6::after {
+  content: '96%';
+}
+
+.skills-progress-7::after {
+  content: '90%';
+}
+
+.skills-progress-8::after {
+  content: '80%';
+}
+
+.skills-progress-9::after {
+  content: '96%';
+}
+
+.skills-progress-percent {
+  display: block;
+  height: 100%;
+  background-color: #fb6470;
+  position: relative;
+}
+
+.skills-progress-percent::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fb6470;
+  position: absolute;
+  top: -6px;
+  right: -1px;
 }
 /*# sourceMappingURL=style.css.map */
